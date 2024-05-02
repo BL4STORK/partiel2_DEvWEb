@@ -3,7 +3,7 @@ require_once ("pdo.php");
 
 $titre = $_POST["titre"];
 
-$resultat = $dbPDO->prepare("SELECT * FROM `partiel2_web`")
+$resultat = $dbPDO->prepare("SELECT * FROM `film`")
 
 echo "<h1> $film :</h1>"
 echo "<p> $film->datedesortie en salle | $film->durée | $genre->libelle </p>";
