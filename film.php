@@ -1,6 +1,10 @@
 <?php
 require_once ("pdo.php");
 
-$name = $_POST["name"];
+$titre = $_POST["titre"];
 
-$resultat = $dbPDO->prepare("INSERT INTO film")
+$resultat = $dbPDO->prepare("SELECT * FROM `partiel2_web`")
+
+echo "<p> $film->datedesortie en salle | $film->durée | $genre->libelle </p>";
+echo "<p> De $realisateur->prenom - $realisateur->nom"
+echo "<p> Synopsis : $film->description"
